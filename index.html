@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="index.js"></script>
+    <title>Portfolio</title>
+    <link rel="icon" type="image/png" href="./assets/logo.png" />
+  </head>
+  <body>
+    <nav class="glassmorphism nav">
+      <h2 class="portfolio">Portfolio.</h2>
+      <ul class="links">
+        <li
+          class="link active-link"
+          id="home"
+          title="Home"
+          onclick="activeLink(this.id)"
+        >
+          <ion-icon name="home"></ion-icon>
+        </li>
+        <li
+          class="link"
+          id="projects"
+          title="Projects"
+          onclick="activeLink(this.id)"
+        >
+          <ion-icon name="laptop"></ion-icon>
+        </li>
+        <li
+          class="link"
+          id="contact"
+          title="Contact"
+          onclick="activeLink(this.id)"
+        >
+          <ion-icon name="mail"></ion-icon>
+        </li>
+        <li
+          class="link"
+          id="about"
+          title="About Me"
+          onclick="activeLink(this.id)"
+        >
+          <ion-icon name="person"></ion-icon>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Contains all the Pages -->
+    <main id="container">
+      <!-- Home Section -->
+      <section class="pages glassmorphism" id="home-section">
+        <div class="background"></div>
+        <div class="background circle"></div>
+        <div class="text-container">
+          <h3 class="intro">Hi, This is</h3>
+          <h1 class="full-name">Rohit Mishra</h1>
+          <h2 class="data-analyst">A Data Analyst.</h2>
+          <p class="qoute">
+            "Instead of looking up to role models, become one yourself."
+          </p>
+        </div>
+        <div class="home-illustration-container">
+          <img
+            src="assets/dataAnalyst.jpg"
+            alt="illustration of data analyst showing off his skills"
+            class="home-illustration"
+          />
+          <p>
+            Designed by
+            <a class="attribute" href="https://freepik.com" target="_blank"
+              >freepik</a
+            >
+          </p>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="pages glassmorphism" id="projects-section">
+        <h3 class="projects">Projects</h3>
+
+        <div class="projects-container">
+          <!-- Amazon web scrapping -->
+          <a
+            href="https://github.com/DataWhizMishra/amazon-web-scrapping"
+            target="_blank"
+          >
+            <div class="project glassmorphism">
+              <img
+                src= "assets/amazonpng.png"
+                class="project-images"
+              />
+              <h3 class="project-title">Amazon Bestseller Analysis</h3>
+              <p class="project-description">
+                The project involved collecting, preprocessing,
+                 and analyzing data to gain insights into the pricing and rating patterns of top tech products.
+              </p>
+            </div>
+          </a>
+
+          <!-- Youtube Analysis -->
+          <a
+            href="https://github.com/DataWhizMishra/Youtube-data-collection-and-analysis"
+            target="_blank"
+          >
+            <div class="project glassmorphism">
+              <img
+                src="./assets/ytanalysis.jpg"
+                class="project-images"
+              />
+              <h3 class="project-title">Youtube data collection and analysis</h3>
+              <p class="project-description">
+                This project fetches data from the YouTube API using the Google 
+                Developer Console and creates visualizations to analyze YouTube trends and performance.
+              </p>
+            </div>
+          </a>
+
+          <!-- Netflix Dashboard -->
+          <a
+            href="https://github.com/DataWhizMishra/Netflix-Tableau-Dashboard"
+            target="_blank"
+          >
+            <div class="project glassmorphism">
+              <img
+                src="./assets/netflixdashboard.png"
+                class="project-images"
+              />
+              <h3 class="project-title">Netflix Tableau Dashboard</h3>
+              <p class="project-description">
+                This Tableau dashboard visualizes insights from the
+                 Netflix dataset, showcasing various aspects of the content available on Netflix.
+              </p>
+            </div>
+          </a>
+
+          <!-- traffic Data forecasting -->
+          <a
+            href="https://github.com/DataWhizMishra/Traffic-Data-Forecasting"
+            target="_blank"
+          >
+            <div class="project glassmorphism">
+              <img
+                src="image.png"
+                class="project-images"
+              />
+              <h3 class="project-title">Traffic Data Forecasting</h3>
+              <p class="project-description">
+               This is the project I made during my Uber Internship where i forecasted traffic data volumes at different road junction with the help of historical data
+              </p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="pages" id="contact-section">
+        <div class="contact-us-container glassmorphism">
+          <h3 class="contact-us">Resume</h3>
+          <p> PDF file <a href="">Resume</a>.</p>
+  
+        </div>
+        <img
+          src="assets/smartphone.png"
+          alt="an illustration of 'contact us'"
+          class="contact-illustration"
+        />
+      </section>
+
+      <!-- About Section  -->
+      <section class="pages" id="about-section">
+        <div class="about-container glassmorphism">
+          <h3 class="about-me">About Me</h3>
+          <div>
+            <img src="./assets/profile.jpg" alt="Data Analyst Rohit Mishra" />
+          </div>
+          <p class="about-me-description">
+            Welcome! I’m Rohit Mishra, a Computer Science student specializing in Data Science.
+             I am passionate about leveraging data to drive insights and innovation. 
+            My portfolio showcases projects where I’ve developed predictive models, analyzed data, 
+            and crafted interactive visualizations. With expertise in Python, Sql,Power Bi, Tableau and machine learning,
+             I strive to create impactful solutions that solve real-world problems. Explore my work and feel free to connect!
+          </p>
+          <ul class="social-links links">
+            <li>
+              <a
+                class="social-link link"
+                href="https://github.com/DataWhizMishra"
+                target="_blank"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a
+                class="social-link link"
+                href="https://www.linkedin.com/in/rohit-mishra-93s5b/"
+                target="_blank"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a
+                class="social-link link"
+                href="https://www.instagram.com/rohitmishrrrra?igsh=MTFucTVyYm9rZGRxeQ=="
+                target="_blank"
+              >
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Installation Of Icons  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
